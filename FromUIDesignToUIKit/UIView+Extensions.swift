@@ -8,3 +8,17 @@ extension UIView {
         subview.translatesAutoresizingMaskIntoConstraints = false
     }
 }
+
+extension NSLayoutConstraint {
+
+    func withPriority(_ priority: UILayoutPriority) {
+        self.priority = priority
+    }
+}
+
+extension UILayoutPriority: ExpressibleByIntegerLiteral {
+
+    public init(integerLiteral value: Int) {
+        self.init(rawValue: Float(value))
+    }
+}
