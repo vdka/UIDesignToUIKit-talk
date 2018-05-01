@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		179A13F990FB96FA17114667 /* libPods-FromUIDesignToUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9747DB1117A5B84243FFB740 /* libPods-FromUIDesignToUIKit.a */; };
+		5D33C25520983D430009B681 /* AppShowcaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C25420983D430009B681 /* AppShowcaseHeaderView.swift */; };
+		5D33C25720983FA80009B681 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C25620983FA80009B681 /* Date+Extensions.swift */; };
+		5D33C2592098413C0009B681 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C2582098413C0009B681 /* Styles.swift */; };
 		5D6460822097E91F0079E791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460812097E91F0079E791 /* AppDelegate.swift */; };
 		5D6460842097E91F0079E791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460832097E91F0079E791 /* ViewController.swift */; };
 		5D6460892097E9210079E791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6460882097E9210079E791 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D33C25420983D430009B681 /* AppShowcaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShowcaseHeaderView.swift; sourceTree = "<group>"; };
+		5D33C25620983FA80009B681 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		5D33C2582098413C0009B681 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		5D64607E2097E91F0079E791 /* FromUIDesignToUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FromUIDesignToUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6460812097E91F0079E791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D6460832097E91F0079E791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				5D6460812097E91F0079E791 /* AppDelegate.swift */,
 				5D6460832097E91F0079E791 /* ViewController.swift */,
 				5D6460932097FD100079E791 /* UIView+Extensions.swift */,
+				5D33C25420983D430009B681 /* AppShowcaseHeaderView.swift */,
+				5D33C25620983FA80009B681 /* Date+Extensions.swift */,
+				5D33C2582098413C0009B681 /* Styles.swift */,
 				5D6460952097FE7E0079E791 /* UITableView+Reusable.swift */,
 				5D6460972097FEBA0079E791 /* AppShowcaseCell.swift */,
 				5D6460992098052A0079E791 /* AppStoreApplication.swift */,
@@ -223,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D33C2592098413C0009B681 /* Styles.swift in Sources */,
 				5D6460982097FEBA0079E791 /* AppShowcaseCell.swift in Sources */,
+				5D33C25720983FA80009B681 /* Date+Extensions.swift in Sources */,
 				5D6460962097FE7E0079E791 /* UITableView+Reusable.swift in Sources */,
+				5D33C25520983D430009B681 /* AppShowcaseHeaderView.swift in Sources */,
 				5D64609A2098052A0079E791 /* AppStoreApplication.swift in Sources */,
 				5D6460942097FD100079E791 /* UIView+Extensions.swift in Sources */,
 				5D6460842097E91F0079E791 /* ViewController.swift in Sources */,
