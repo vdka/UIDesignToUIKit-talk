@@ -12,16 +12,14 @@ class AppShowcaseCell: UITableViewCell {
     let subtitleLabel = UILabel()
     let getButton = UIButton()
 
+    lazy var shadowLayer = CAShapeLayer()
+
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         let guide = UILayoutGuide()
         contentView.addLayoutGuide(guide)
         selectionStyle = .none
-
-        cellBackgroundImage.layer.shadowRadius = 2
-        cellBackgroundImage.layer.shadowColor = UIColor.red.cgColor
-        cellBackgroundImage.layer.shadowOffset = CGSize(width: 0, height: 2)
 
         titleLabel.font = UIFont.appOfTheDay
         appNameLabel.font = UIFont.appName
@@ -47,9 +45,11 @@ class AppShowcaseCell: UITableViewCell {
         getButton.layer.cornerRadius = getButton.intrinsicContentSize.height / 2
         
         // NOTE: This updates the layoutMarginsGuide
-        backgroundBlurView.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-        cellBackgroundImage.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        let inset: CGFloat = 20
+        backgroundBlurView.layoutMargins = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+        cellBackgroundImage.layoutMargins = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
 
+        
         cellBackgroundImage.layer.cornerRadius = 13
         cellBackgroundImage.clipsToBounds = true
 
@@ -112,11 +112,31 @@ class AppShowcaseCell: UITableViewCell {
         NSLayoutConstraint.activate([
             getButton.centerYAnchor.constraint(equalTo: backgroundBlurView.centerYAnchor),
             getButton.trailingAnchor.constraint(equalTo: backgroundBlurView.layoutMarginsGuide.trailingAnchor),
-        ])
+        ]) 
+
+        // Add shadow layer
+        contentView.layer.addSublayer(shadowLayer)
+        contentView.layer.shadowOpacity = 0.5
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        contentView.layer.shadowRadius = 5
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError(#function)
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        shadowLayer.shadowPath = UIBezierPath(roundedRect: cellBackgroundImage.frame, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 13, height: 13)).cgPath
+    }
+
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+
+        UIView.animate(withDuration: 0.15, animations: {
+            self.cellBackgroundImage.transform = highlighted ? CGAffineTransform.identity.scaledBy(x: 0.95, y: 0.95) : CGAffineTransform.identity
+        })
     }
 }
 
