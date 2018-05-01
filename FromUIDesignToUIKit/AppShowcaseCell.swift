@@ -103,10 +103,10 @@ class AppShowcaseCell: UITableViewCell {
         ])
 
         NSLayoutConstraint.activate([
-            subtitleLabel.topAnchor.constraint(equalTo: appNameLabel.bottomAnchor),
+            subtitleLabel.topAnchor.constraint(greaterThanOrEqualTo: appNameLabel.bottomAnchor),
             subtitleLabel.leadingAnchor.constraint(equalTo: appNameLabel.leadingAnchor),
             subtitleLabel.trailingAnchor.constraint(lessThanOrEqualTo: getButton.leadingAnchor, constant: -8),
-            subtitleLabel.bottomAnchor.constraint(equalTo: backgroundBlurView.layoutMarginsGuide.bottomAnchor),
+            subtitleLabel.bottomAnchor.constraint(equalTo: backgroundBlurView.layoutMarginsGuide.bottomAnchor).withPriority(999),
         ])
 
         NSLayoutConstraint.activate([
