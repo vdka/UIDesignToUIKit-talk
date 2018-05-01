@@ -1,0 +1,6 @@
+framework module Pods_FromUIDesignToUIKit {
+  umbrella header "Pods-FromUIDesignToUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

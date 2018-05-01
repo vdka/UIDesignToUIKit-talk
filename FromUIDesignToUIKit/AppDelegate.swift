@@ -1,6 +1,8 @@
 
 import UIKit
 
+import Peek
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -12,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationController(rootViewController: vc)
         window!.rootViewController = nav
         window!.makeKeyAndVisible()
+        window!.peek.enabled = true
 
         return true
     }

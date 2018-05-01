@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		179A13F990FB96FA17114667 /* libPods-FromUIDesignToUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9747DB1117A5B84243FFB740 /* libPods-FromUIDesignToUIKit.a */; };
 		5D33C25520983D430009B681 /* AppShowcaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C25420983D430009B681 /* AppShowcaseHeaderView.swift */; };
 		5D33C25720983FA80009B681 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C25620983FA80009B681 /* Date+Extensions.swift */; };
 		5D33C2592098413C0009B681 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C2582098413C0009B681 /* Styles.swift */; };
@@ -19,9 +18,11 @@
 		5D6460962097FE7E0079E791 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460952097FE7E0079E791 /* UITableView+Reusable.swift */; };
 		5D6460982097FEBA0079E791 /* AppShowcaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460972097FEBA0079E791 /* AppShowcaseCell.swift */; };
 		5D64609A2098052A0079E791 /* AppStoreApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460992098052A0079E791 /* AppStoreApplication.swift */; };
+		A385F9073384C65E01826D26 /* Pods_FromUIDesignToUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D56CF708199C09187D03DE /* Pods_FromUIDesignToUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39D56CF708199C09187D03DE /* Pods_FromUIDesignToUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FromUIDesignToUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D33C25420983D430009B681 /* AppShowcaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShowcaseHeaderView.swift; sourceTree = "<group>"; };
 		5D33C25620983FA80009B681 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		5D33C2582098413C0009B681 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		5D6460992098052A0079E791 /* AppStoreApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreApplication.swift; sourceTree = "<group>"; };
 		6836D812110A5806ADE861A0 /* Pods-FromUIDesignToUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FromUIDesignToUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FromUIDesignToUIKit/Pods-FromUIDesignToUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		916626E6749D3B235AF0CD6D /* Pods-FromUIDesignToUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FromUIDesignToUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FromUIDesignToUIKit/Pods-FromUIDesignToUIKit.debug.xcconfig"; sourceTree = "<group>"; };
-		9747DB1117A5B84243FFB740 /* libPods-FromUIDesignToUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FromUIDesignToUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179A13F990FB96FA17114667 /* libPods-FromUIDesignToUIKit.a in Frameworks */,
+				A385F9073384C65E01826D26 /* Pods_FromUIDesignToUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +55,7 @@
 		0A51EE159BD0FE515EAA4DC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9747DB1117A5B84243FFB740 /* libPods-FromUIDesignToUIKit.a */,
+				39D56CF708199C09187D03DE /* Pods_FromUIDesignToUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,10 +181,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FromUIDesignToUIKit/Pods-FromUIDesignToUIKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Peek/Peek.framework",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-14/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Peek.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

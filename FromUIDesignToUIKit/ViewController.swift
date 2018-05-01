@@ -45,6 +45,14 @@ class ViewController: UIViewController {
             parent.setNavigationBarHidden(true, animated: false)
         }
     }
+
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+        UIApplication.shared.keyWindow?.peek.handleShake(motion)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
