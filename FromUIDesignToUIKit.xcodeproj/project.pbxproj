@@ -12,6 +12,9 @@
 		5D6460892097E9210079E791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6460882097E9210079E791 /* Assets.xcassets */; };
 		5D64608C2097E9210079E791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D64608A2097E9210079E791 /* LaunchScreen.storyboard */; };
 		5D6460942097FD100079E791 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460932097FD100079E791 /* UIView+Extensions.swift */; };
+		5D6460962097FE7E0079E791 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460952097FE7E0079E791 /* UITableView+Reusable.swift */; };
+		5D6460982097FEBA0079E791 /* AppShowcaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460972097FEBA0079E791 /* AppShowcaseCell.swift */; };
+		5D64609A2098052A0079E791 /* AppStoreApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6460992098052A0079E791 /* AppStoreApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5D64608B2097E9210079E791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D64608D2097E9210079E791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D6460932097FD100079E791 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5D6460952097FE7E0079E791 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		5D6460972097FEBA0079E791 /* AppShowcaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShowcaseCell.swift; sourceTree = "<group>"; };
+		5D6460992098052A0079E791 /* AppStoreApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				5D6460812097E91F0079E791 /* AppDelegate.swift */,
 				5D6460832097E91F0079E791 /* ViewController.swift */,
 				5D6460932097FD100079E791 /* UIView+Extensions.swift */,
+				5D6460952097FE7E0079E791 /* UITableView+Reusable.swift */,
+				5D6460972097FEBA0079E791 /* AppShowcaseCell.swift */,
+				5D6460992098052A0079E791 /* AppStoreApplication.swift */,
 				5D6460882097E9210079E791 /* Assets.xcassets */,
 				5D64608A2097E9210079E791 /* LaunchScreen.storyboard */,
 				5D64608D2097E9210079E791 /* Info.plist */,
@@ -133,6 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6460982097FEBA0079E791 /* AppShowcaseCell.swift in Sources */,
+				5D6460962097FE7E0079E791 /* UITableView+Reusable.swift in Sources */,
+				5D64609A2098052A0079E791 /* AppStoreApplication.swift in Sources */,
 				5D6460942097FD100079E791 /* UIView+Extensions.swift in Sources */,
 				5D6460842097E91F0079E791 /* ViewController.swift in Sources */,
 				5D6460822097E91F0079E791 /* AppDelegate.swift in Sources */,
